@@ -1,0 +1,12 @@
+<div class="employee-list">
+  <h2>Employees List</h2>
+  <button type="button" name="button" (click)="getListFromService()">
+    Employee Lists
+  </button>
+
+  <ul class="list-group">
+    <li *ngFor="let info of listReceived" class="list-group-info">
+      {{ info }}
+    </li>
+  </ul>
+</div>

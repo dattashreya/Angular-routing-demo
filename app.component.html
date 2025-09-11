@@ -1,2 +1,7 @@
-<app-employee-details></app-employee-details>
-<app-employee-list></app-employee-list>
+<div>
+  <ul>
+    <li *ngFor="let item of items;trackBy:trackBy "> {{item.name}} </li>
+  </ul>
+</div>
+
+<input type="button" value="Add Angular" (click)="addItem()">

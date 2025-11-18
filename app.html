@@ -1,9 +1,8 @@
 
-<button type="button"
-        (click)="fetchData()">
-  click me
-</button>
-<h4>
-  Details ...........
-</h4>
-{{data}}
+<h1>Header</h1>
+<button type="button" routerLink="">Home</button>
+<button type="button" routerLink="/customers">Customer</button>
+<button type="button" routerLink="/orders">Order</button>
+
+<router-outlet></router-outlet>
+<h1>Footer</h1>
